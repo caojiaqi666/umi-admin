@@ -7,7 +7,7 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {
-    title: '@umijs/max',
+    title: 'Umi Admin',
   },
   routes: [
     {
@@ -28,7 +28,9 @@ export default defineConfig({
       name: ' CRUD 示例',
       path: '/table',
       component: './Table',
+      access: 'canSeeAdmin',
     },
   ],
   npmClient: 'pnpm',
+  dva: {},
 });
