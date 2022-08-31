@@ -6,9 +6,9 @@ export default defineConfig({
   model: {},
   initialState: {},
   request: {},
-  layout: {
-    title: 'Umi Admin',
-  },
+  // layout: {
+  //   title: 'Umi Admin',
+  // },
   routes: [
     {
       path: '/',
@@ -29,6 +29,11 @@ export default defineConfig({
       path: '/table',
       component: './Table',
       access: 'canSeeAdmin',
+    },
+    {
+      name: '登录注册页',
+      path: '/login',
+      component: './Login',
     },
   ],
   npmClient: 'pnpm',

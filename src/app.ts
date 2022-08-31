@@ -14,29 +14,30 @@ export async function getInitialState(): Promise<{ name: string }> {
   return { name: '全局init状态' };
 }
 
-export const layout = () => {
-  return {
-    logo: 'https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg',
-    menu: {
-      locale: true,
-    },
-    /** 点击退出登录的处理逻辑 */
-    logout: (initialState: any) => {
-      console.log(initialState);
-    },
-    /** 展示用户名、头像、退出登录相关组件 */
-    // rightRender: (initialState: any) => {
-    //   return null;
-    // },
-    /** 发生错误后的回调（可做一些错误日志上报，打点等） */
-    onError: (error: Error, info: any) => {
-      console.log('error: ', error);
-      console.log('info: ', info);
-    },
-    /** 错误组件 */
-    // ErrorComponent: (error: Error) => React.ReactElement<any>;
-  };
-};
+// export const layout = () => {
+//   return {
+//     logo: 'https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg',
+//     menu: {
+//       locale: true,
+//     },
+//     navTheme: "dark",
+//     /** 点击退出登录的处理逻辑 */
+//     logout: (initialState: any) => {
+//       console.log(initialState);
+//     },
+//     /** 展示用户名、头像、退出登录相关组件 */
+//     // rightRender: (initialState: any) => {
+//     //   return null;
+//     // },
+//     /** 发生错误后的回调（可做一些错误日志上报，打点等） */
+//     onError: (error: Error, info: any) => {
+//       console.log('error: ', error);
+//       console.log('info: ', info);
+//     },
+//     /** 错误组件 */
+//     // ErrorComponent: (error: Error) => React.ReactElement<any>;
+//   };
+// };
 
 export const request: RequestConfig = {
   timeout: 4000,
